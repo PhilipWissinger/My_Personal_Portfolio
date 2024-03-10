@@ -1,0 +1,85 @@
+@import '../font/font.css';
+
+.projects-section {
+    background: rgba(255, 255, 255, 0.70);
+    width: 99%;
+    height: 35rem;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 10px;
+    overflow-x: auto;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.2);
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    margin-top: 25px;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+  }
+  
+  .pagination-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    /* Bug fix, made buttons always be visible and fixed
+    v2 commit */
+    position:fixed;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    z-index: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .pagination-buttons {
+    /* Added absolute position to center independently from "Antal project text" */
+    position: absolute; 
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    /* Added to center after making position fixed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .pagination-arrow {
+    margin-right: 5px;
+    padding: 3px 10px;
+    border: 1px solid #051F6E;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    color: "#051F6E";
+  }
+  
+  .pagination-number  {
+    background-color: white;
+    color: #051F6E;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid #051F6E;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px
+  }
+
+  .blue-label {
+    margin-left:2rem ;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: avenir;
+    margin-bottom: 0px;
+  }
