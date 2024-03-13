@@ -1,7 +1,8 @@
 # Personal GitHub Portfolio
 
-Welcome to my GitHub portfolio, where I share some of my work. \
-The portfolio covers the following areas: 
+Greetings. \
+Here you will mostly find stuff regarding finance, and web-development for courses which I've read at Uni.
+
 ### Financial risk 
 Language: MATLAB. \
 Portfolio metrics: 
@@ -18,13 +19,13 @@ Valuations of different options using different methods:
 - Valuations of exotic options like down-and-in barrier option
 - Sensitivity analysis
 
-### Development of a large application of Region Östegötland
+### Development of a large web-application for Region Östegötland
 Main languages: TypeScript. \
-Together with 25 other students we have developed a web application that enables the staff at Region Östergötland's hospitals to easier plan, implement and track improvement works.
+Together with a team of 25 other students we have developed a web application that enables the staff at Region Östergötland's hospitals to easier plan, implement and track improvement works.
 
 ### Development of a webshop for selling & buying plants
 Main language: Python/HTML/js/css
 
 ### Space Invaders
-Language: Java
+Language: Java. \
 Made a game together with a friend connected to a Java course at LiU. 
