@@ -1,0 +1,97 @@
+
+.listingImage {
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+}
+
+button {
+    border-radius: 20px;
+    background-color: #a3b18a;
+    border: 1px solid rgb(174, 185, 168);
+}
+
+button:hover {
+    background-color: #818d6d;
+}
+
+button:active {
+    background-color: #3a5a40;
+}
+
+.innerColumn {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    padding: 0;
+}
+
+.listingText {
+    margin-left: 5%;
+}
+
+#listingColor {
+    font-size: x-large;
+    margin-bottom: 3%;
+}
+
+#publishDate {
+    /* font-size: small; */
+    color: rgb(128, 128, 128);
+}
+
+#descriptionTitle {
+    margin-top: 2%;
+}
+
+#description {
+    margin-bottom: 3%;
+}
+
+#price {
+    margin-top: 3%;
+    font-family: "Montserrat-Regular";
+    font-size: x-large;
+    width: fit-content;
+    float:right;
+}
+
+#buyBtn {
+    float: left;
+    margin-right: 0;
+    color: white;
+    font-weight: bold;
+    /* background-color: rgb(184, 201, 171); */
+    /* border: 1px solid rgb(234, 246, 224); */
+}
+
+#backBtn {
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+.line {
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.listingIcon {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 30px;
+    height: fit-content;
+}
+
+.iconText {
+    width:fit-content;
+    margin-bottom: 0;
+    align-self: center;
+}

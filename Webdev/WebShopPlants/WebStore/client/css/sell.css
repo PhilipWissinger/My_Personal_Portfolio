@@ -1,0 +1,168 @@
+@media only screen and (max-width: 768px) {
+  .form-container {
+    padding: 50px;
+  }
+}
+
+:root {
+  --logo-color: #409c84;
+}
+
+.image-container {
+  position: relative;
+  /* height: 90%; */
+  height: 100vh;
+  width: 100%
+  /* height: auto; */
+  /* overflow: hidden; */
+}
+
+
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.form-container {
+  height: 95vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-container label {
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container input[type="file"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+}
+
+#plant-input {
+  width: 100%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border: grey;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  margin-left: 0;
+  margin-bottom: 7.5%;
+}
+
+#checkStickling {
+  width: 100%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border: grey;
+}
+
+
+
+.form-container input[type="file"] {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.image-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+label:hover #my-icon {
+  transform: scale(1.1); 
+}
+
+#my-icon {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 20px;
+  background-color: #e6e4e4;
+  transition: transform 0.3s ease-out; 
+  
+}
+
+.image-upload-container label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    align-items:center;
+    margin-top: 10px;
+    
+  }
+  
+  .button-container button {
+    width: 45%;
+    padding: 10px;
+    background-color: #cdcdcd;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10%;
+    }
+    
+  .button-container button:hover {
+    background-color: #8f8f8f;
+  }
+
+  
+  .button-container input[type="submit"] {
+    width: 45%;
+    padding: 10px;
+    /* background-color: #4CAF50; */
+    background: var(--logo-color);
+
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+    
+  .button-container input[type="submit"]:hover {
+    background-color: #1d745d;
+  }
+  

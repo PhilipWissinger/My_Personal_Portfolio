@@ -1,0 +1,12 @@
+# Python Cache
+__pycache__
+
+# Environment
+venv/
+
+venv2/
+
+#Database
+server/instance/database.db
+
+server/database.db

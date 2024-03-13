@@ -1,0 +1,459 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../font/montserrat-light.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('../font/montserrat-thin.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../font/Montserrat-Bold.ttf');
+}
+
+body {
+    font-family: "Montserrat-Light";
+}
+
+.logo-color { /*Klara: Loggans exakta färg*/
+    color:#588157;
+}
+
+.navbar { /*Klara: Navbar har vit bakgrund */
+    background-color: #fff !important;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+#navbar-brand img{ /*Klara: Hur stor loggan är */
+    width: 120px;
+    cursor: pointer;
+}
+
+#cart img{ /*Klara: Hur stor kundkorgen är */
+    width: 30px;
+    margin-top: 4px;
+}
+
+#navitems a { /*Klara: Avstånd mellan vänstra elementen i navbar*/
+    margin-left: 30px;
+}
+
+#loginitems a { /*Klara: Avstånd mellan högra elementen i navbar*/
+    margin-right: 30px;
+}
+
+.active-page { /*Klara: En aktiv sida får en linje under sig*/
+    border-bottom: 1px solid #333333;
+}
+
+
+/* ------------------ Selma. Styling för home-page (i client.html)----------------------- */
+
+/* Använd denna om du vill ändra typsnitt för all text samtidigt. */
+/*body {
+    font-family:monospace
+}*/
+
+.createlisting-gotoshop-text {
+    color: white;
+    /* font-weight: bold; */
+    font-family: "Montserrat-Regular";
+}
+
+.Buy-Sell-text {
+    font-family: "Montserrat-Thin";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#firstpics-container img {
+    filter: brightness(70%);
+}
+
+.homepage-categories-pictures img:hover {
+    filter: brightness(90%)
+}
+.homepage-categories-pictures img {
+    filter: brightness(70%);
+    transition: filter 0.2s ease;
+    cursor: pointer;
+}
+
+.text-on-category-pictures {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+/* Knapp "Skapa annons" och "Gå til Köp"*/
+button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 0.7em 2.5em;
+    border: none;
+    background: #89222200;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+button .border {
+    position: absolute;
+    border: 0.15em solid #fff;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+}
+button:hover .border {
+    display: block;
+    width: 9.9em;
+    height: 3.7em;
+}
+.full-rounded {
+    border-radius: 2em;
+}
+/* .logo-color { */
+    /*Klara: Loggans exakta färg*/
+    /* color: #409c84;
+} */
+
+.navbar {
+    /*Klara: Navbar har vit bakgrund */
+    background-color: #fff !important;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    font-family: "Montserrat-Light";
+}
+
+#navbar-brand img {
+    /*Klara: Hur stor loggan är */
+    width: 120px;
+}
+
+#cart img {
+    /*Klara: Hur stor kundkorgen är */
+    width: 30px;
+    margin-top: 4px;
+}
+
+#navitems a {
+    /*Klara: Avstånd mellan vänstra elementen i navbar*/
+    margin-left: 30px;
+}
+
+#loginitems a {
+    /*Klara: Avstånd mellan högra elementen i navbar*/
+    margin-right: 30px;
+}
+
+.active-page {
+    /*Klara: En aktiv sida får en linje under sig*/
+    border-bottom: 1px solid #333333;
+}
+
+
+/*------Innehåll i kundkorg. Bilder, priser etc står i mitten i sin rad i tabellen------*/
+.table-image thead td,
+.table-image thead th {
+    border: 0;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.table-image td,
+.table-image th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.price {
+    margin-left: 1rem;
+}
+
+.modal-footer {
+    padding-top: 0rem;
+}
+/*-------------------------------*/
+
+/*----Registera-sida-------*/
+#register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register_image img {
+    width: 430px;
+}
+
+/* Stylingen av footern*/
+.div-with-lines {
+    border-top: 1px solid rgb(95, 95, 95);
+    margin-bottom: -30px;
+    text-align: center;
+}
+.copyright {
+    margin-left: 170px;
+    display: inline-block;
+}
+.btn-bottom {
+    color: rgba(122, 122, 122, 0.976);
+    display: inline-block;
+    font-size: 16px;
+}
+.btn-bottom:hover {
+    color: #1d1d1d;
+    display: inline-block;
+    font-size: 16px;
+}
+#footer{
+    background-color: #d7d7d7b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+ #sprouty-info {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    size:50px;
+    margin-left: 80px;
+ }
+
+
+ #regulatory-center {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ #regulatory-list {
+    list-style: None;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ #filter-by {
+    font-family: 'Times New Roman', Times, serif;
+    size:50px;
+    text-align: center;
+ }
+
+ .filter-bar {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 35% auto;
+  }
+  
+ 
+
+
+.searchbar input[type = "text"] {
+    width: 200px; 
+    height: 40px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+}
+.choice-container {
+    width: 200px;
+    height : 50 px; 
+    border: 2px solid white;
+  }
+  
+
+ /* #sun-filter {
+    padding-left: 5%; 
+    
+}
+#water-filter {
+    padding-left: 5%;
+    padding-right: 60%;  
+}  */
+
+#diff-container1, #diff-container2,#diff-container3,#sun-container1,#sun-container2,#sun-container3,#water-container1,#water-container2,#water-container3 {
+    text-align: center;
+    width: 120px;
+    height : 50px; 
+    border: 2px solid lightgray;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.slider-background{
+    width: 500px;
+    height: 170px;
+    padding: 10px 40px 0px;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 5%;
+    border-color: lightgray;
+    /* box-shadow: 0 12px 35px rgba(0,0,0,0.1); */
+    
+  }
+  /*Allt kopplad till prislådorna*/
+  .pricebox-input{
+    width: 100%;
+    display: flex;
+    margin: 30px 0 35px;
+  }
+  .pricebox-input .price-box{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+  }
+  .pricebox-input input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #999;
+    margin-left: 8px;
+    -moz-appearance: textfield;
+  }
+
+
+  .pricebox-input .separator{
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    
+  }
+  /*Allt kopplat till slidern*/
+  .slider{
+    height: 10px;
+    border-radius: 10px;
+    background: #ddd;
+    position: relative;
+  }
+  .slider .slider-progress{
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    border-radius: 5px;
+    background: #a3b18a;
+  }
+  .range-input{
+    position: relative;
+  }
+  .range-input input{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 20px;
+    width: 20px;
+    background: #a3b18a;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+  input[type="range"]::-moz-range-thumb{
+    height: 20px;
+    width: 20px;
+    background: #a3b18a;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+
+  .filter-container {
+    white-space: nowrap; 
+    padding-left: 20%;
+    margin-bottom: 2.5%;
+  }
+
+.filter-container >* { /*changing the elements for all the dividers inside the filter-container*/
+    margin-right: 5%;
+}
+
+  /* Cart handling */
+
+button.delete-button {
+    text-align: center;
+    line-height: 27px;
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 6px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 80px;
+    height: 27px;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button.delete-button::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+}
+
+button.delete-button:hover::before {
+    width: 100%;
+}
+
+.cart-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+    font-size: 12px;
+    font-weight: bold;
+}

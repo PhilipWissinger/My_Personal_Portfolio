@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="css/sell.css">
+<script src="js/sell.js"></script>
+<div class="image-container">
+ 
+    <img src="images/buy_picture.jpg" id="my-plant" alt ="my-plant">
+    <!-- action="/upload" method="post" -->
+   
+    <div class="form-container">
+
+      <form enctype="multipart/form-data" action="/upload" method="post">
+        <h2>Lägg ut en produkt</h2>
+        <div class="form-row">
+            
+            <div class="col">
+                <div class="image-upload-container">
+                    <label for="image-upload"><img src="images/image-icon.png" id = "my-icon" alt="Upload Image"></label>
+                    <input type="file" id="image-upload" name="image-upload"><br>
+                  </div>
+            </div>
+            <div class="col">
+                <label for="plant"></label>
+                <div>
+                  <input autoComplete="on" list="plant" id="plant-input" placeholder="Planta"/> 
+                  <datalist id="plant"></datalist>
+                  <input type="hidden" id="plantId" name="plantId"  />
+                </div>
+      
+                <label for="inputTitle"></label>
+                <input type="text" id="plantTitle" name="input1" placeholder="Titel"><br>  
+
+                <label for="inputPrice"></label>
+                <input type="text" id="plantPrice" name="input2" placeholder="Pris"><br>
+                
+                <label for="inputColor"></label>
+                <input type="text" id="plantColor" name="input3" placeholder="Färg"><br>   
+
+                <input type="checkbox" class="form-check-input" id="cutting-check" value="checked">
+                <label class="form-check-label" for="cutting-check">Stickling</label>
+
+                <label for="inputDescription"></label>
+                <textarea id="plantDescription" name="textarea" rows="6" placeholder="Beskrivning"></textarea><br>
+
+                <div class="button-container">
+
+                    <button type="button" id="cancel">Avbryt</button>
+
+                    <input type="submit" id="publishListing" value="Publicera">
+
+                </div>
+            </div>
+        </div>    
+      </form>
+    </div>
+  </div>
+
+
+  

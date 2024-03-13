@@ -1,0 +1,48 @@
+<!-- Detta är scriptet som körs på kontaktwebbsidan Gjort av Philip -->
+<!-- <script src="css/contact.css"></script> -->
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<script src="js/contact.js"></script>
+
+
+<div class="image-container">
+  <img src="images/map.jpg" preload alt="map" id="our-map" placeholder="mapholder">
+  <div class="text">
+    <h2>Besök oss på</h2>
+    <h1>Linköping Universitet</h1>
+    <p>581 31 Linköping</p>
+  </div>
+  <div class="matrix">
+    <div>
+    <h2>Kontaktuppgifter</h2>
+    <p>Telefon: +46 123 44 56 78</p>
+    <p>Email: hej@sprouty.se</p>
+    <h1>Du kan också skicka ett meddelande via formuläret nedan</h1>
+    </div>
+    <!-- <div>
+    </div> -->
+    <!-- <div>
+    </div> -->
+  </div>
+  <div class="message-us">
+      Skicka ett meddelande till Sprouty!
+  </div>
+</div>
+
+<div class="form-container">
+  <form class = "contact-form" action="/contact-us" method="POST"> 
+    <div class="form-row">
+      <div class="col">
+        <label for="inputName"></label>
+        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Namn">
+      </div>
+      <div class="col">
+        <label for="inputEmail"></label>
+        <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" placeholder="E-mail">
+      </div>
+    </div>
+    <textarea class="form-control" id="inputMessage" name="inputMessage" rows="5" placeholder="Meddelande"></textarea>
+    <button id="submit" type="submit" class="btn btn-primary" name="submit">Skicka<span
+        class="arrow">&#10132;</span></button>
+  </form>
+</div>
+

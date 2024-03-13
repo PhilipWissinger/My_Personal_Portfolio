@@ -1,0 +1,160 @@
+/* Lovisa */
+.card {
+    width: fit-content;
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.column {
+    padding: 0;
+    width: fit-content;
+}
+
+.card:hover .card-img-top {
+    filter: opacity(70%)
+}
+
+/* .card:active .card-img-top {
+    filter: opacity(100%)
+} */
+
+.card-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container.shopCards {
+    width: 75%;
+    max-width: none;
+    margin: 0 auto
+}
+
+.card-title {
+    margin-bottom: 0;
+    /* width: fit-content; */
+}
+
+.row {
+    column-gap: 4%;
+    row-gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.card.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.topImage {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card .card-img-top {
+    /* z-index: 99; */
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-img-overlay {
+    position: absolute;
+    display: flex;
+}
+
+/* .card-img-overlay, .img-fluid {
+    flex: 1;
+} */
+
+.iconTag {
+    z-index: 20;
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.waterIcon {
+    bottom: 80px;
+    right: 10px;
+}
+
+.sunIcon {
+    bottom: 45px;
+    right: 10px;
+}
+
+.difficultyIcon {
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: auto;
+    /* white-space: nowrap; */
+}
+
+.iconTag:hover .iconDescription {
+    display: block;
+}
+
+.iconDescription {
+    height: fit-content;
+    background-color: #e2e6df89;
+    border-radius: 8px;
+    position: absolute;
+    display: none;
+    z-index: 9999;
+}
+
+.waterDescription {
+    right: -121px;
+    bottom: 3px;
+}
+
+.sunDescription {
+    right: -93px;
+    bottom: 3px;
+}
+
+.diffDescription {
+    bottom: 3px;
+    right: -128px;
+}
+
+.iconDescriptionText {
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.filterText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.imageContainer {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    position: relative;
+}
+
+

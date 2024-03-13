@@ -1,0 +1,85 @@
+/* Style for the grid container */
+/*.tags {
+border: 1px;
+border-style: dotted;
+border-color: black;
+  }  */
+  .outerContainer{
+    border: 1px;
+    /*border-style: dotted;
+    border-color: rgb(255, 0, 0); */
+    height: 140px;
+    padding: 5px;
+    
+
+    
+   
+  }
+  .tags {
+    height: 15%;
+    border: 1px;
+    /*border-style: dotted; */
+    border-color: black;
+    color: white;
+    font-size: 12px;
+
+  }
+  .title {
+    height: 50%;
+    border: 1px;
+    /*border-style: dotted;*/
+    border-color: black;
+    font-weight: bold;
+  }
+
+  .bottomContainer {
+    display: flex;
+    max-width: 100%;
+    height: 35%; /* 20% of the parent height (outerContainer) */
+    border: 1px;
+   /* border-style: dotted;*/
+    border-color: black;
+  }
+  
+  .dateAndIcons {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 100% of the parent height (.bottomContainer) */
+    border: 1px;
+   /*border-style: dotted;*/
+    border-color: black;
+  }
+  .custom-checkbox input[type="checkbox"]:hover {
+    cursor: pointer;
+  }
+  
+  .date {
+    background-color: rgb(255, 255, 255); /* Add your styles */
+   
+    height: 50%;
+    border: 1px;
+    /*border-style: dotted; */
+    border-color: black;
+  }
+  
+  .icons {
+    background-color: rgb(255, 255, 255); /* Add your styles */
+    display:flex;
+    height: 50%;
+    align-items: center;
+    border: 1px;
+    /*border-style: dotted;*/
+    border-color: black;
+  }
+  
+  .profilCard {
+    flex: 0 0 30%; /* 30% width, no flex-grow or flex-shrink */
+    background-color: rgb(255, 255, 255); /* Add your styles */
+    padding: 10px;
+    border: 1px;
+    /*border-style: dotted;
+    border-color: black;*/
+    height: 100%; /* 100% of the parent height (.bottomContainer) */
+    
+  }

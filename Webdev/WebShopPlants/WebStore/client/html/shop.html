@@ -1,0 +1,92 @@
+<script src="js/listing.js"></script>
+<script src="js/shop.js"></script>
+
+<div class="container" style="position:relative; margin: auto; border: 3px black;">
+    <h1 style="width:fit-content; margin: auto; margin-bottom: 2%; margin-top: 1%; color:#588157;">Köp växter!</h1>
+</div>
+
+  <div class="filter-container" style="display: flex;">
+    <div id="difficulty-filter" class="difficulty-container" style="align-items: center;">
+        <div id="diff-container1" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/diff1.png" alt="alt-buy-picture" width="20" height="20" style="margin-top: 1%;">
+            <p class="container-text">Enkel</p>     
+        </div>
+        <br>
+        <div id="diff-container2" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/diff2.png" alt="alt-buy-picture" width="20" height="20" style="margin-top: 1%;">
+            <p class="container-text">Medelsvår</p>
+        </div>
+        <br>
+        <div id="diff-container3" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/diff3.png" alt="alt-buy-picture" width="20" height="20" style="margin-top: 1%;">
+            <p class="container-text">Svår</p>
+        </div>
+    </div>
+
+    <div id="sun-filter" style="align-items: center;">
+        <div id ="sun-container1" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/sun1.png" alt="alt-buy-picture" width="20" height="20" style="margin-top: 1%;">
+            <p class="container-text">Lite solljus</p>
+        </div>
+        <br>
+        <div id="sun-container2" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/sun2.png" alt="alt-buy-picture" width="20" height="20" style="margin-top: 1%;">
+            <p class="container-text">Medel solljus</p>
+        </div>
+        <br>
+        <div id="sun-container3" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/sun3.png" alt="alt-buy-picture" width="20" height="20" style="margin-top: 1%;">
+            <p class="container-text">Mycket solljus</p>
+        </div>
+    </div>
+
+    <div id="water-filter" style="align-items: center;">
+        <div id="water-container1" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/water1.png" alt="alt-buy-picture" width="20" height="20">
+            <p class="container-text">Lite vatten</p>
+        </div>
+        <br>
+        <div id="water-container2" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/water2.png" alt="alt-buy-picture" width="20" height="20">
+            <p class="container-text">Medel vatten</p>
+        </div>
+        <br>
+        <div id="water-container3" style="display: inline-block;" onclick="toggle(id)">
+            <img src="images/water3.png" alt="alt-buy-picture" width="20" height="20">
+            <p class="container-text">Mycket vatten</p>
+        </div>
+    </div>
+
+    <div class="slider-background">
+        <header>
+          <h5>Prisintervall</h5>
+        </header>
+        <div class="pricebox-input">
+          <div class="price-box">
+            <span>Min</span>
+            <input type="number" class="input-min" value="0">
+          </div>
+          <div class="separator"> - </div>
+          <div class="price-box">
+            <span>Max</span>
+            <input type="number" class="input-max" value="1000">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-progress"></div>
+        </div>
+        <div class="range-input">
+          <input type="range" class="range-min" min="0" max="1000" value="0" step="1">
+          <input type="range" class="range-max" min="0" max="1000" value="1000" step="1">
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+    
+    <!-- Lovisa: container som visar alla listings -->
+<div class="container shopCards"></div>
+    
+  <div id="shopRow" class="row g-3 g-md-4">
+   
+  </div>    
+</div>

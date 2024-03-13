@@ -1,0 +1,93 @@
+
+<link rel="stylesheet" type="text/css" href="css/mypage.css">
+<link rel="stylesheet" type="text/css" href="css/loginregisterform.css">
+<script src="js/mypage.js"></script>
+
+
+<body>
+    <div id="background-image">
+
+        <div id="my-profile">
+            <img src="images/Default_pp.png" alt="alt-buy-picture" width="150" height="150" style="margin-top: 40px;">
+            <h1 id="first-last-name"></h1>
+            <p id="e-mail"></p>
+            <button id="edit-name-button">Redigera namn</button>
+            <button id="edit-email-button">Redigera e-mail</button>
+            <button id="delete-profile-button" onclick="deleteAccount(event)">Radera konto</button>
+        </div>
+
+        <!--Modal för att byta namn-->
+        <div class="modal fade" id="edit-name-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <h3 class="modal-title" id="exampleModalLabel">Byt namn</h3>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="txt_field">
+                                <input type="text" required id="newName"/>
+                                <span></span>
+                                <label>Nytt namn</label>
+                            </div>
+                            <!-- <input id="save-name-button" type="submit" onClick="changeName(event)" value="Spara nytt namn" /> -->
+                            <button id="save-name-button" type="submit" onclick="changeName(event)">Spara nytt namn </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal för att byta email-->
+        <div class="modal fade" id="edit-email-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <h3 class="modal-title" id="exampleModalLabel">Byt e-mail</h3>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="txt_field">
+                                <input type="text" required id="newEmail" />
+                                <span></span>
+                                <label>Ny e-mail</label>
+                            </div>
+                            <!-- <input id="save-name-button" type="submit" onClick="changeName(event)" value="Spara nytt namn" /> -->
+                            <button id="save-email-button" type="submit" onclick="changeEmail(event)">Spara ny e-mail </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------Lägger till orderhistorik------>
+        <div id="wrapper">
+            <div id="orderhistory">
+                <h1 class="orders-ads-headers">Orderhistorik</h1>
+                <div id="orderhistory-inner"></div>
+            </div>
+            <div id="my-listings">
+                <h1 class="orders-ads-headers">Mina annonser</h1>
+                <div id="my-listings-inner"></div>
+            </div>
+        </div>
+
+    </div>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-sf1xnIaFeFwrpJz8n+DdI3q3J+l/ztV7/N8y1k72dOfKsTTLsdJr1N8ZNUQGn7T+Q2+OJ8WfRkRywhO9zfz+Yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</body>
+

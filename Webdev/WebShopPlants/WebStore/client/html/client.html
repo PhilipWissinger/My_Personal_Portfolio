@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/client.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <title>Sprouty</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <!-- Den här raden under funkar ej och skapar felmeddelande i konsollen-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-sf1xnIaFeFwrpJz8n+DdI3q3J+l/ztV7/N8y1k72dOfKsTTLsdJr1N8ZNUQGn7T+Q2+OJ8WfRkRywhO9zfz+Yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="js/checkout.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/userHandling.js"></script>
+    <script src="js/cart.js"></script>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div id="navbar-brand" onClick="viewHome()">
+        <img src="images/logga.png">
+      </div>      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mr-auto" id="navitems">
+            <a id="home" class="nav-item nav-link" href="#">Hem</a>
+            <a id="shop" class="nav-item nav-link" href="#">Köp</a>
+            <a id="sell" class="nav-item nav-link" href="#">Sälj</a>
+            <a id="aboutus" class="nav-item nav-link" href="#omoss">Om oss</a>
+            <a id="contact" class="nav-item nav-link" href="#">Kontakt</a>
+          </div>
+          
+          <div class="navbar-nav ml-auto d-flex flex-row " id="loginitems">
+            <a id="mypage" class="nav-item nav-link" href="#">Min sida</a>
+            <a id="register" class="nav-item nav-link" href="#">Registrera</a>
+            <a id="login" class="nav-item nav-link" href="#">Logga in</a>
+            <a id="logout" class="nav-item nav-link" href="#">Logga ut</a>
+          </div>
+          <div id="cart">
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cartModal">
+                    <span class="bi bi-cart4 logo-color" style="font-size:1.4rem" ></span>
+                </button>
+           </div>  
+          <i class="fa fa-shopping-cart cart-icon"></i>
+          <span class="badge badge-pill badge-danger cart-badge"></span>    
+        </div>
+      </nav>
+      
+      <div class="container-fluid">
+      </div>
+   
+      <script id="view-home" type="text/html">
+
+          <!-- Selma: Lägger till två bilder på framsidan samt texten på bilderna -->
+          <div id="firstpics-container" style="text-align:center; margin-top: 30px;">
+            <div class="image-container" style="display: inline-block; position: relative;">
+              <img src="images/buy_picture.jpg" alt="alt-buy-picture" width="550" height="550">
+                <div style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: #fff; width: 80%;">
+                  <h1 class="Buy-Sell-text">Köp</h1>
+                  <p>Hitta en ny växt att dekorera hemmet med</p>  
+                  <button id="shopbutton-homepage" class="full-rounded" style="margin-top: 20px;">
+                    <span class="createlisting-gotoshop-text"> Gå till Köp</span>
+                    <div class="border full-rounded"></div>
+                  </button> 
+                </div>
+            </div>
+            <div class="image-container" style="display: inline-block; position: relative;">
+              <img src="images/sell_picture.jpg" alt="alt-sell-picture" width="550" height="550">
+                <div style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: #fff; width: 80%;">
+                  <h1 class="Buy-Sell-text">Sälj</h1>
+                  <p>Skapa en annons för att sälja och ge dina växter ett nytt hem</p>
+                  <button id="sellbutton-homepage" class="full-rounded" style="margin-top: 20px;">
+                    <span class="createlisting-gotoshop-text"> Skapa annons</span>
+                    <div class="border full-rounded"></div>
+                  </button>              
+                </div>    
+            </div> 
+          </div>
+
+          <!-- Selma: Lägger till texten "Browse plants by category" efter huvudbilderna på framsidan-->
+          <div style="text-align:center; font-size: 30px; margin-top: 30px; font-family: 'Montserrat-Regular';">
+            <p>Välj kategori av växter</p>  
+          </div> 
+
+          <!-- Selma: Lägger till de fyra katogeribilderna längst ner-->
+          <!--One container class for each images. "display: inline-block;" makes the pictures appear beside each other on a row-->
+          <div class="homepage-categories-pictures" style="text-align:center; margin-bottom: 30px;">
+            <div style="position: relative; display: inline-block; width: 345px;">
+              <a id="category-largeplants-homepage"><img src="images/large_plant_picture.jpg" alt="alt-large-plant-picture" width="345" height="345"></a>
+              <p class="text-on-category-pictures">Stora växter</p>
+            </div>
+            <div style="position: relative; display: inline-block; width: 345px;">
+              <a id="category-smallplants-homepage"><img src="images/small_plant_picture.jpg" alt="alt-small-plant-picture" width="345" height="345"></a>
+              <p class="text-on-category-pictures" >Små växter</p>              
+            </div>
+            <div style="position: relative; display: inline-block; width: 345px;">
+              <a id="category-succulents-homepage"><img src="images/succulents_picture.jpg" alt="alt-succulents-picture" width="345" height="345"></a>
+              <p class="text-on-category-pictures">Suckulenter</p>
+             </div>
+            <div style="position: relative; display: inline-block; width: 345px;">
+              <a id="category-cuttings-homepage"><img src="images/first_cutting_picture.jpeg" alt="alt-first-cutting-picture" width="345" height="345"></a>
+              <p class="text-on-category-pictures">Sticklingar</p>
+            </div>
+          </div>
+
+          
+
+      </script>
+
+      <script id="view-shop" type="text/html">
+      </script>
+    
+      <script id="view-sell" type="text/html">
+      </script>
+   
+      <script id="view-aboutus" type="text/html">
+      </script>
+
+      <script id="view-contact" type="text/html">
+      </script>
+
+      <script id="view-login" type="text/html">
+      </script>
+
+      <script id="view-register" type="text/html">
+      </script>
+
+      <script id="view-logout" type="text/html">
+      </script>
+
+      <script id="view-cookies" type="text/html">
+      </script>
+
+      <script id="view-termsofuse" type="text/html">
+      </script>
+
+      <!-- Selma: Sidfoten.-->
+      <footer id="footer">
+          <div class="div-with-lines" style="display: flex; justify-content: center; margin-top: 30px;">
+            <div style="text-align:center;">
+              <h1 style="font-size: 20px; margin-top: 30px;">Kontakta oss</h1>
+              <p style="font-size: 10px;">SPROUTY</p>
+              <p style="font-size: 10px;">hej@sprouty.se</p>
+              <p style="font-size: 10px; margin-bottom: 30px;">+46 123 44 56 78</p> 
+            </div>
+          </div>
+        <div style="margin-top: 30px; border-bottom: 1px solid rgb(95, 95, 95);">
+          <p class="copyright">&copy; 2023 SPROUTY</p> 
+          <p id="cookies" type="button" class="btn-bottom" style="margin-left: 725px;">Cookie settings</p>
+          <p id="terms-of-use" type="button" class="btn-bottom" style="margin-left: 30px;">Terms of use</p> 
+        </div>
+      </footer> 
+
+
+
+
+      <!--Klara: KUNDKORG. Lyckas inte få denna att funka i egen fil-->
+      <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Din varukorg
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+    
+            <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produkt</th>
+                      <th scope="col">Pris</th>
+                      <th scope="col">Ta bort</th>
+                    </tr>
+                  </thead>
+                  <tbody id = "cartListings"> </tbody>
+                    <!-- <tr>
+                      <td class="w-25">
+                        <img src="https://c.media.kavehome.com/images/Products/AA7326_1V01.jpg?tx=w_900,c_fill,ar_0.8,q_auto,g_auto" class="img-fluid img-thumbnail" alt="Sheep">
+                      </td>
+                      <td>Sansevera</td>
+                      <td>145 SEK</td>
+                      <td>
+                        <a href="#" class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table> 
+                <div class="d-flex justify-content-end">
+                  <h5>Total: <span class="price text logo-color">145 SEK</span></h5>
+                </div> -->
+            </div>
+
+            <div class="modal-footer border-top-0 d-flex justify-content-between">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Stäng</button>
+              <div id = "checkout"></div>
+              <!-- <button type="button" class="btn btn-outline-success logo-color">Till kassan</button> -->
+            </div>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
+
+  <!-- <a id="testbetala" class="nav-item nav-link" href="#">testbetala</a> -->
