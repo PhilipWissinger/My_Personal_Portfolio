@@ -21,7 +21,7 @@ Valuations of different options using different methods:
 
 ### Development of a large web-application for Region Östegötland
 Main languages: TypeScript. \
-Together with a team of 25 other students we have developed a web application that enables the staff at Region Östergötland's hospitals to easier plan, implement and track improvement works.
+Together with a team of 25 other students we have made requirement analysis' and usecases to develop a web application that enables the staff at Region Östergötland's hospitals to easier plan, implement and track improvement works.
 
 ### Development of a webshop for selling & buying plants
 Main language: Python/HTML/js/css
